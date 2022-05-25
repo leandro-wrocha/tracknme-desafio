@@ -1,5 +1,7 @@
 import express, { Application } from "express";
 
+import "@/shared/infra/typeorm";
+
 export class ServerApplication {
   private server: Application;
 
