@@ -2,14 +2,14 @@ version: '3.9'
 services:
   db:
     image: postgres
-    container_name: dbTracknme
+    container_name: tracknme
     restart: always
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=tracknme_desafio
+      - POSTGRES_DB=tracknme
     volumes:
       - pgdata:/data/postgres
     network_mode: bridge

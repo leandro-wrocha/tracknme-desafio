@@ -1,5 +1,5 @@
-import { IEmployeeDTO } from "../dtos";
-import { EmployeeRepositoryFaker } from "../repositories/fakes/EmployeeRepositoryFaker";
+import { IEmployeeDTO } from "../../dtos";
+import { EmployeeRepositoryFaker } from "../../repositories/fakes/EmployeeRepositoryFaker";
 import { CreateEmployeeUseCase } from "./CreateEmployeeUseCase";
 
 let employeeRepositoryFaker = new EmployeeRepositoryFaker();

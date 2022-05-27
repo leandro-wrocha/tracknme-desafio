@@ -1,6 +1,8 @@
 import { DataSource } from "typeorm";
 
-import { createEmployees1653419486818 } from "../shared/infra/typeorm/migrations/1653419486818-create_employees";
+import { createEmployees1653661740606 } from "@/shared/infra/typeorm/migrations/1653661740606-create_employees";
+
+import { Employee } from "@/modules/employee/infra/typeorm/entities/Employee";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
@@ -8,10 +10,8 @@ export const AppDataSource = new DataSource({
   port: 5432,
   username: "docker",
   password: "docker",
-  database: "tracknme_desafio",
-  logging: true,
-  synchronize: true,
+  database: "tracknme",
 
-  entities: [],
-  migrations: [createEmployees1653419486818],
+  entities: [Employee],
+  migrations: [createEmployees1653661740606],
 });

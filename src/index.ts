@@ -1,5 +1,3 @@
-import { ServerApplication } from "@/shared/infra/http/server";
+import { app } from "./shared/infra/http/app";
 
-const serverApplication = new ServerApplication();
-
-serverApplication.initialization();
+app.listen(3301, () => {});

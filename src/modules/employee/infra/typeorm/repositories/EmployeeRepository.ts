@@ -17,6 +17,8 @@ export class EmployeeRepository implements IEmployeeRepository {
     const employee = Object.assign(
       {
         id: randomUUID(),
+        created_at: new Date(),
+        updated_at: new Date(),
         ...data,
       },
       Employee
